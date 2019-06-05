@@ -62,7 +62,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="window"></div>
+	<div class="window" style="display: none;"></div>
 
 
 <script type="text/javascript">
@@ -105,6 +105,7 @@ for(let i=0;i<8;i=i+1){
 }
 let x = function(){
 	if (score>4){
+		w.style.display = "block"
 		w.style.top = "10%"
 		w.innerHTML = "YOU WIN"
 		w.style.fontSize = "20px"
@@ -113,6 +114,7 @@ let x = function(){
 		clearInterval(stopI)
 	}
 	else{
+		w.style.display = "block"
 		w.style.top = "10%"
 		w.innerHTML = "YOU LOSE"
 		clearInterval(stopJ)
